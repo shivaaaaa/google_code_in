@@ -3,6 +3,13 @@ import cookielib
 import mechanize
 import re
 
+
+# Google Code In Challenge
+# This code crawls Amazon and extracts list of films seen
+# It asks for the amazon username and password.
+# By: Shiva Mirzaei
+# Date: December 2016
+
 class LinkParser(HTMLParser):                  # parse movie names with HTMLParser
 
     breakfound = False # if True, means next tag contains movie name
@@ -35,7 +42,6 @@ br = mechanize.Browser()                         # log into Amazon using mechani
 
 cookiejar = cookielib.LWPCookieJar()
 br.set_cookiejar( cookiejar )
-
 br.set_handle_equiv( True )
 br.set_handle_gzip( True )
 br.set_handle_redirect( True )
