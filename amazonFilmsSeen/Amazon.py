@@ -10,6 +10,7 @@ import re
 # By: Shiva Mirzaei
 # Date: December 2016
 
+
 class LinkParser(HTMLParser):                  # parse movie names with HTMLParser
 
     breakfound = False # if True, means next tag contains movie name
